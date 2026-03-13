@@ -5,13 +5,18 @@
 		<meta charset="utf-8">
 		<style>
 			p {color: red;}
+			h2 {
+				color: purple;
+				text-align: center;
+				}
 		</style>
+		<h2>This heading should be displayed in purple and alligned with the center, as defined by the style element.</h2>
 	</head>
 	<body>
 		<h1>This heading should be displayed in default black because the color is neither defined by the style nor the div element.</h1>
 		<p>This paragraph should also be displayed in red, as defined by the style element.</p>
 		<div style="color: green">
-			<h2>This heading is in green, as defined by the containing div element.</h2>
+			<h3>This heading is in green, as defined by the containing div element.</h3>
 			<p>This paragraph is in red because the color is defined by the style, which takes precedence over the color, green, which was defined by the div element.</p>
 		</div>
 	</body>
