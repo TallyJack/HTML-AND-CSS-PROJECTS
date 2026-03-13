@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Write title here.</title>
+		<meta charset="utf-8">
+		<style>
+			p {color: red;}
+		</style>
+	</head>
+	<body>
+		<h1>This heading should be displayed in default black because the color is neither defined by the style nor the div element.</h1>
+		<p>This paragraph should also be displayed in red, as defined by the style element.</p>
+		<div style="color: green">
+			<h2>This heading is in green, as defined by the containing div element.</h2>
+			<p>This paragraph is in red because the color is defined by the style, which takes precedence over the color, green, which was defined by the div element.</p>
+		</div>
+	</body>
+</html>
