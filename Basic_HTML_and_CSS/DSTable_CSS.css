@@ -1,0 +1,32 @@
+.DSAttNames {
+			background-color: darkblue;
+			color: yellow;
+			text-decoration: underline;
+			text-decoration-style: none;
+			text-decoration-color: blue;
+			font-weight: 700;
+			font-size: large;
+			width: 200px
+			}
+.AttValues {
+			background-color: DodgerBlue;
+			color: yellow;
+			text-decoration: none;
+			text-decoration-style: none;
+			text-decoration-color: blue;
+			}
+td {
+		background-color: DodgerBlue;
+		color: yellow;			text-decoration: none;
+		text-decoration-style: none;
+		text-decoration-color: blue;
+		text-align: center;
+			}
+th {
+	color: pink;
+	background: indigo;
+	font-size: large;
+	font-style: oblique;
+	text-align: center;
+}
+			

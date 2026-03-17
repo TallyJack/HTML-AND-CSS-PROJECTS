@@ -1,0 +1,43 @@
+.DSAttNames {
+			background-color: darkblue;
+			color: yellow;
+			text-decoration: underline;
+			text-decoration-style: none;
+			text-decoration-color: blue;
+			font-weight: 700;
+			font-size: large;
+			width: 200px
+			}
+.AttValues {
+			text-decoration: none;
+			text-decoration-style: none;
+			text-decoration-color: blue;
+			}
+td {
+		text-decoration: none;
+		text-decoration-style: none;
+		text-decoration-color: blue;
+		text-align: center;
+			}
+th {
+	font-size: large;
+	font-style: oblique;
+	text-align: center;
+}
+table {
+	border: 1px solid silver;
+}
+td:hover {
+	background-color:yellow;
+	color: black;
+}
+tr, th {
+	background-color: indigo;
+	color: pink;
+}
+tr, td {
+	background-color: DodgerBlue;
+	color: yellow;
+}
+
+			
