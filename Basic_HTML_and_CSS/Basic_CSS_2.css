@@ -1,7 +1,11 @@
 p {
 	color: pink;
 	background: indigo;
-	font-size: xx-small;
+	font-size: xx-large;
 	font-style: oblique;
 	text-align: center;
+}
+h1 {
+	color: darkblue;
+	text-shadow: 2px 2px #ff0000;
 }
