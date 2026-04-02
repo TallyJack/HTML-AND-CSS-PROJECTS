@@ -1,6 +1,10 @@
 /*Import link for the Roboto link from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/*Import link for the Mukta link from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
 body{
     background-color: white;
     overflow-x: hidden; /*Hides the bottom left right scroll bar when elements stretch beyond the screen border*/
@@ -23,6 +27,11 @@ a{
 a:hover{
     color: #d7eaf7; /*Changes the color of the anchor element when the user hovers their mouse over it*/
 }
+
+blockquote{
+    text-align: center;
+}
+
 .nav-bar{
     background-color: #216391;
     padding-top: 10px;
@@ -39,4 +48,54 @@ a:hover{
 #nav-border{
     padding-bottom: 10px;
     border-bottom: 3px solid #ffffff;
+}
+
+/*HEADERS*/
+h1, h2, h3 {
+    color: #0a3f63;
+    text-align: center;
+    font-family: "Mukta", sans-serif; /*Font from fonts.google.com*/
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#contact-h3{
+    text-shadow: none;
+}
+
+/*Creates a text-color change animation on the h1 tags for the home and contact page headers*/
+@keyframes color-text{
+    0%{color: #b5e1ff;}
+    100%{color: #0a3f63;}
+}
+
+/*Calls the animation by its name in a CSS selector so it can be applied to a specific HTML element*/
+.animate-text{
+    animation: color-text 4s;
+}
+
+/*BODY CONTENT*/
+
+img{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 19);
 }
