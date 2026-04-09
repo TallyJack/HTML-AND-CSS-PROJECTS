@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Creating Effects with CSS</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<!--NAVBAR-->
-		<nav class="nav-bar">
-			<ul>
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li class="drop">
-					<a href="#">Images</a>
-					<div class="rollover-menu">
-						<a href="#image1">Image 1</a>
-						<a href="#image2">Image 2</a>
-						<a href="#image3">Image 3</a>
-					</div>
-				</li>
-			</ul>
-		</nav>
-		<!--IMAGES-->
-		<section>
-			<!--IMAGE ONE-->
-			<div id="image1" class="image-container">
-				<img src="images/Jump.jpg">
-				<div class="overlay"></div>
-			</div>
-			<!--IMAGE TWO-->
-			<div id="image2" class="image-container">
-				<img src="images/Fall.jpg" class="zoom">
-			</div>
-			<!--IMAGE THREE-->
-			<div id="image3" class="image-container">
-				<div class="circle">
-					<img src="images/Chute.jpg">
+
+<head>
+	<title>Creating Effects with CSS</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+	<style>
+		h1, h2, h3 {
+			position: absolute;
+			font-family: Caveat, cursive; 
+  			font-size: 40px;
+ 			font-style: normal;
+			z-index: 3; /*Allows heading to display between navbar and images*/
+		}
+	</style>
+</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="nav-bar">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li class="drop">
+				<a href="#">Images</a>
+				<div class="rollover-menu">
+					<a href="#image1">Image 1</a>
+					<a href="#image2">Image 2</a>
+					<a href="#image3">Image 3</a>
 				</div>
+			</li>
+		</ul>
+	</nav>
+	<!--IMAGES-->
+	<section>
+		<!--IMAGE ONE-->
+		<div id="image1" class="image-container">
+			<h1>Jump!</h1>
+			<img src="images/Jump.jpg">
+			<div class="overlay"></div>
+		</div>
+		<!--IMAGE TWO-->
+		<div id="image2" class="image-container">
+			<h2>Fall!</h2>
+			<img src="images/Fall.jpg" class="zoom">
+		</div>
+		<!--IMAGE THREE-->
+		<div id="image3" class="image-container">
+			<h3>Chute!</h3>
+			<div class="circle">
+				<img src="images/Chute.jpg">
 			</div>
-		</section>
-		<footer class="footer-text">
-			<div>
-				<p>The Tech Academy &copy;</p>
-			</div>
-		</footer>
-	</body>
+		</div>
+	</section>
+	<footer class="footer-text">
+		<div>
+			<p>The Tech Academy &copy;</p>
+		</div>
+	</footer>
+</body>
+
 </html>
