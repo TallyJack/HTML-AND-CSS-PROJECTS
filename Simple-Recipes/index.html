@@ -15,13 +15,13 @@
             <li><a href="#">Home</a></li>
             <li><a href="#recipes">Recipes</a></li>
             <div>
-                <a>Featured Recipe</a>
-                <a>Pasta</a>
-                <a>Chicken</a>
-                <a>Pork</a>
-                <a>Biscuits</a>
-                <a>Fish</a>
-                <a>Dessert</a>
+                <a href="#featured">Featured Recipe</a>
+                <a href="#pasta">Pasta</a>
+                <a href="#chicken">Chicken</a>
+                <a href="#pork">Pork</a>
+                <a href="#biscuits">Biscuits</a>
+                <a href="#fish">Fish</a>
+                <a href="#dessert">Dessert</a>
             </div>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -33,7 +33,7 @@
     <!--RECIPES-->
     <section>
         <!--FEATURED RECIPE-->
-        <div>
+        <div id="featured">
             <h2>Featured Recipe</h2>
             <div>
                 <img src="images/skillet-pizza.jpeg">
@@ -58,7 +58,7 @@
         <div>
             <h2>Recipes</h2>
             <!--PASTA-->
-            <div>
+            <div id="pasta">
                 <h3>Saucy Tortelloni Parm</h3>
                 <div>
                     <img src="images/tortelloni.jpeg">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <!--CHICKEN-->
-            <div>
+            <div id="chicken">
                 <h3>Mediterranean Chicken Thighs</h3>
                 <div>
                     <img src="images/chicken-thighs.jpeg">
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <!--PORK-->
-            <div>
+            <div id="pork">
                 <h3>Crispy Pork Katsu & Rice</h3>
                 <div>
                     <img src="images/pork-katsu.jpeg">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <!--BISCUITS-->
-            <div>
+            <div id="biscuits">
                 <h3>Cheddar Cheese Biscuits</h3>
                 <div>
                     <img src="images/cheddar-biscuits.jpeg">
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <!--FISH-->
-            <div>
+            <div id="fish">
                 <h3>Baked Cod & Scalloped Potatoes</h3>
                 <div>
                     <img src="images/baked-cod.jpeg">
@@ -128,7 +128,7 @@
                 </div>
             </div>
             <!--DESSERT-->
-            <div>
+            <div id="dessert">
                 <h3>S'mores Cake</h3>
                 <div>
                     <img src="images/smores.jpeg">
@@ -141,6 +141,31 @@
                     <input type="button" value="Recipe">
                 </div>
             </div>
+        </div>
+    </section>\
+    <!--CONTACT FORM-->
+    <section>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <h3>Want more information about our recipes?
+                <br>
+                Contact us below!
+            </h3>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <br>
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone Number">
+                <br>
+                <input type="checkbox" id="subscription">
+                <label for="subscription">Subscribe for weekly recipes!</label>
+                <br>
+                <textarea placeholder="Type message here..."></textarea>
+                <br>
+                <input type="submit" value="Submit">
+
+            </form>
         </div>
     </section>
 </body>
