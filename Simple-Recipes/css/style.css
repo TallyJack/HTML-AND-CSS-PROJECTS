@@ -24,6 +24,7 @@ ul{
 }
 
 a{
+    display: block;
     font-family: "Josefin Slab", serif;
     font-size: 25px;
     font-weight: 800;
@@ -40,4 +41,16 @@ a:hover{
     color: white;
     box-shadow: 0px 8px 16px 0px rgb( 0, 0, 0, 0.7);
     transition: background-color 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none; /*Prevents tht e anchor limits in this div from showing on the web browser until otherwise specified*/
+    position: absolute; /*Absolute will position the div element relative to the position of its parent element*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*Creates a trigger effect with the user hovers their mouse over the Recipes link The trigger will display all elements within the rollover-menu class div element*/
+.drop:hover .rollover-menu{
+    display: block;
 }
