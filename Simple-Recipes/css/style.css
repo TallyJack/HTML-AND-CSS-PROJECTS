@@ -421,3 +421,15 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: rgb(247,177, 188);
 }
+
+/*ABOUT SECTION CSS*/
+
+/*Sets up the content wihtin the div tag containing the ID 'about' to be centered on the webpage*/
+#about{
+    display: block;
+}
+
+/*This keeps the paddding even on both sides of the About section's text*/
+#about p{
+    padding-right: 30px;
+}
