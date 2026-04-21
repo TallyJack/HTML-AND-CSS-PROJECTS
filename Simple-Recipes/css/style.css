@@ -183,6 +183,7 @@ p{
     width: 500px;
     height: 350px;
     margin: 100px auto 180px; /*Shorthand value top, right and left, then bottom*/
+    perspective: 1000px; /*Tells the browser how much 3 dimensional space an element should take up on the screen*/
 }
 
 /*Styling for mobile-sized screens*/
@@ -298,9 +299,44 @@ p{
 
 }
 
-.flip-front{
+.flip-front, .flip-back{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+}
+
+.flip-back{
+    background-color: rgb(149, 238, 223);
+    border: 2px solid white;
+    transform: rotateY(-180deg); /*Adds 180 degrees back from the previously subtracted -180 degrees it moved to previously so the text can be read properly*/
+}
+
+.text-container{
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 600px){
+    .text-container{
+        padding-top: 0px;
+    }
+}
+
+/*RECIPE BUTTON*/
+
+input[type="button"]{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Josefin Slab', serif; /*Font from fonts.google.com*/
+    font-weight: bold;
+    font-size: 22px;
+    padding: 11px 17px;
+    color: rgb(1, 128, 106);
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(247,177, 188);
+    color: white;
 }
