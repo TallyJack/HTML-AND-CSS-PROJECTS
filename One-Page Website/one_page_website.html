@@ -7,6 +7,7 @@
     <meta name="description" content="This is a joke webpage featuring a signup sheet for a ficitonal cult">
     <!--CUSTOM CSS STYLING-->
     <link rel="stylesheet" href="CSS/one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -40,19 +41,65 @@
         <!--PAUL ALIEN-->
         <div id="Paul" class="container">
             <h3>Paul Alien</h3>
-            <img src="images/Paul_Alien.jpg" width="560" alt="Picture of Paul">
+            <img src="images/Paul_Alien.jpg" width="560" alt="Picture of Paul" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
         <!--CHRISTOPHER JOHNSON-->
         <div id="Chris" class="container">
             <h3>Christopher Johnson</h3>
-            <img src="images/ChristopherJohnson.jpg" width="560" alt="Picture of Chris">
+            <img src="images/ChristopherJohnson.jpg" width="560" alt="Picture of Chris" onclick="openModal();currentSlide(2)" class="hover-shadow">
         </div>
         <!--STITCH-->
         <div id="Stitch" class="container">
             <h3>Stitch (aka Experiment 626)</h3>
-            <img src="images/Stitch.jpg" width="560" alt="Picture of Stitch">
+            <img src="images/Stitch.jpg" width="560" alt="Picture of Stitch" onclick="openModal();currentSlide(3)" class="hover-shadow">
         </div>
     </section>
+
+    <!--LIGHTBOX/MODAL-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/Paul_Alien.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/ChristopherJohnson.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/Stitch.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="images/thumbnails/Paul_Alien_thumb.jpg" width="100%" onclick="currentSlide(1)" alt="Paul">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/thumbnails/ChristopherJohnson_thumb.jpg" width="100%" onclick="currentSlide(2)" alt="Chris">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/thumbnails/Stitch_thumb.jpg" width="100%" onclick="currentSlide(3)" alt="Stitch">
+            </div>
+
+        </div>
+    </div>
+
     <!--VIDEO-->
     <section id="Video">
         <div class="container">
@@ -91,7 +138,7 @@
                         <tr>
                             <td colspan="2">
                                 <input type="checkbox" placeholder="Newsletter" style="width: 50px">
-                            
+
                                 <label for="Newsletter">Would you like to recieve text updates from our Supreme
                                     Alien
                                     Leader?</label>
